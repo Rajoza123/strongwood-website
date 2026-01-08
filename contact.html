@@ -9,163 +9,163 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans text-gray-900">
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo2.png" alt="STRONGWOOD Logo">
+  <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-5 py-0 flex justify-between items-center h-20">
+      <a href="index.html" class="flex items-center justify-center h-full transition-transform hover:scale-105">
+        <img src="assets/images/logo2.png" alt="STRONGWOOD Logo" class="h-16 w-auto object-contain">
       </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+      <nav class="flex gap-6 items-center">
+        <a href="index.html" class="text-white text-base no-underline">Home</a>
+        <a href="about.html" class="text-white text-base no-underline">About</a>
+        <a href="products.html" class="text-white text-base no-underline">Products</a>
+        <a href="contact.html" class="bg-orange-500 text-white px-7 py-3 rounded no-underline hover:bg-orange-600 transition">Get a Quote</a>
       </nav>
     </div>
   </header>
 
   <!-- SPLIT HERO SECTION -->
-  <section class="contact-split-hero">
-    <div class="hero-left">
-      <div class="hero-left-content">
-        <div class="trust-badges">
-          <span class="trust-badge">⭐ 18 Years Experience</span>
-          <span class="trust-badge">✓ ISPM-15 Certified</span>
+  <section class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 gap-10 items-start">
+      <!-- Left -->
+      <div>
+        <div class="flex gap-3 mb-4">
+          <span class="bg-blue-500/10 text-blue-300 px-3 py-1 rounded-full text-xs font-semibold">⭐ 18 Years Experience</span>
+          <span class="bg-green-500/10 text-green-300 px-3 py-1 rounded-full text-xs font-semibold">✓ ISPM-15 Certified</span>
         </div>
-        <h1>Transform Your Shipping with Expert Packaging</h1>
-        <p class="lead-text">From fragile instruments to heavy machinery—get engineered wooden packaging that protects every shipment, every time.</p>
-        
-        <div class="quick-benefits">
-          <div class="benefit-item">
-            <div class="benefit-icon">⚡</div>
+        <h1 class="text-5xl font-bold mb-4 font-poppins">Transform Your Shipping with Expert Packaging</h1>
+        <p class="text-lg text-gray-200 mb-8">From fragile instruments to heavy machinery—get engineered wooden packaging that protects every shipment, every time.</p>
+
+        <div class="grid grid-cols-3 gap-6 mb-8">
+          <div class="flex items-start gap-3">
+            <div class="text-2xl">⚡</div>
             <div>
-              <h4>24-Hour Response</h4>
-              <p>Fast quotes, faster solutions</p>
+              <h4 class="font-semibold">24-Hour Response</h4>
+              <p class="text-sm text-gray-300">Fast quotes, faster solutions</p>
             </div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-icon">🎯</div>
+          <div class="flex items-start gap-3">
+            <div class="text-2xl">🎯</div>
             <div>
-              <h4>Custom Engineering</h4>
-              <p>Tailored to your exact needs</p>
+              <h4 class="font-semibold">Custom Engineering</h4>
+              <p class="text-sm text-gray-300">Tailored to your exact needs</p>
             </div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-icon">🚀</div>
+          <div class="flex items-start gap-3">
+            <div class="text-2xl">🚀</div>
             <div>
-              <h4>Export Ready</h4>
-              <p>Global compliance included</p>
+              <h4 class="font-semibold">Export Ready</h4>
+              <p class="text-sm text-gray-300">Global compliance included</p>
             </div>
           </div>
         </div>
 
-        <div class="live-stats">
-          <div class="live-stat">
-            <span class="stat-badge">Live</span>
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-3">
+            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">Live</span>
             <div>
-              <strong>5,247</strong>
-              <span>Shipments This Year</span>
+              <strong class="block text-2xl">5,247</strong>
+              <span class="text-sm text-gray-300">Shipments This Year</span>
             </div>
           </div>
-          <div class="live-stat">
-            <div>
-              <strong>99.2%</strong>
-              <span>Customer Satisfaction</span>
-            </div>
+          <div>
+            <strong class="block text-2xl">99.2%</strong>
+            <span class="text-sm text-gray-300">Customer Satisfaction</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="hero-right">
-      <div class="form-wrapper">
-        <div class="form-accent-bar"></div>
-        <div class="form-header-special">
-          <span class="form-eyebrow">Quick Quote Request</span>
-          <h2>Get Started in 60 Seconds</h2>
-          <p>Our packaging experts will respond within 24 hours</p>
+      <!-- Right (Form) -->
+      <div>
+        <div class="relative bg-white text-gray-900 rounded-lg shadow-xl overflow-hidden">
+          <div class="absolute left-0 top-0 h-full w-1 bg-blue-500"></div>
+          <div class="p-8">
+            <div class="mb-6">
+              <span class="text-xs font-semibold uppercase tracking-wide text-blue-600">Quick Quote Request</span>
+              <h2 class="text-2xl font-bold font-poppins mt-1">Get Started in 60 Seconds</h2>
+              <p class="text-sm text-gray-600">Our packaging experts will respond within 24 hours</p>
+            </div>
+
+            <form class="space-y-4">
+              <div class="relative">
+                <span class="absolute left-3 top-2.5">👤</span>
+                <input type="text" placeholder="Your Full Name" required class="w-full pl-10 pr-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              
+              <div class="relative">
+                <span class="absolute left-3 top-2.5">📧</span>
+                <input type="email" placeholder="Email Address" required class="w-full pl-10 pr-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              
+              <div class="relative">
+                <span class="absolute left-3 top-2.5">📱</span>
+                <input type="tel" placeholder="Phone Number" required class="w-full pl-10 pr-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <select required class="w-full px-3 py-2 border rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">What do you need to ship?</option>
+                <option value="machinery">🏗️ Machinery & Equipment</option>
+                <option value="electronics">💻 Electronics & Components</option>
+                <option value="automotive">🚗 Automotive Parts</option>
+                <option value="export">📦 Export Goods</option>
+                <option value="other">🔧 Other / Custom</option>
+              </select>
+
+              <textarea placeholder="Brief description: dimensions, weight, destination..." rows="4" required class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+              <label for="fileUpload" class="flex items-center gap-2 w-full px-3 py-2 border rounded cursor-pointer hover:border-blue-500">
+                <input type="file" id="fileUpload" accept=".pdf,.jpg,.png" multiple class="hidden" />
+                <span>📎</span>
+                <span class="text-sm text-gray-700">Attach specs/photos (optional)</span>
+              </label>
+
+              <button type="submit" class="w-full bg-orange-500 text-white px-5 py-3 rounded font-semibold hover:bg-orange-600 transition flex items-center justify-center gap-2">
+                <span>Get My Free Quote</span>
+                <span>→</span>
+              </button>
+              <p class="text-xs text-gray-500 text-center">✓ No spam. We respect your privacy.</p>
+            </form>
+          </div>
         </div>
-
-        <form class="hero-form">
-          <div class="input-with-icon">
-            <span class="input-icon">👤</span>
-            <input type="text" placeholder="Your Full Name" required />
-          </div>
-          
-          <div class="input-with-icon">
-            <span class="input-icon">📧</span>
-            <input type="email" placeholder="Email Address" required />
-          </div>
-          
-          <div class="input-with-icon">
-            <span class="input-icon">📱</span>
-            <input type="tel" placeholder="Phone Number" required />
-          </div>
-
-          <select class="fancy-select" required>
-            <option value="">What do you need to ship?</option>
-            <option value="machinery">🏗️ Machinery & Equipment</option>
-            <option value="electronics">💻 Electronics & Components</option>
-            <option value="automotive">🚗 Automotive Parts</option>
-            <option value="export">📦 Export Goods</option>
-            <option value="other">🔧 Other / Custom</option>
-          </select>
-
-          <textarea class="message-box" placeholder="Brief description: dimensions, weight, destination..." rows="4" required></textarea>
-
-          <div class="file-upload-area">
-            <input type="file" id="fileUpload" accept=".pdf,.jpg,.png" multiple />
-            <label for="fileUpload">
-              <span class="upload-icon">📎</span>
-              <span>Attach specs/photos (optional)</span>
-            </label>
-          </div>
-
-          <button type="submit" class="cta-button">
-            <span>Get My Free Quote</span>
-            <span class="arrow">→</span>
-          </button>
-          <p class="form-note">✓ No spam. We respect your privacy.</p>
-        </form>
       </div>
     </div>
   </section>
 
   <!-- FEATURE STRIP -->
-  <section class="feature-strip">
-    <div class="container">
-      <div class="feature-strip-grid">
-        <div class="feature-mini">
-          <div class="feature-mini-icon">🔒</div>
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid grid-cols-4 gap-6">
+        <div class="flex items-center gap-3 bg-white p-5 rounded shadow">
+          <div class="text-2xl">🔒</div>
           <div>
-            <strong>Secure Packaging</strong>
-            <span>Engineered protection</span>
+            <strong class="block">Secure Packaging</strong>
+            <span class="text-sm text-gray-600">Engineered protection</span>
           </div>
         </div>
-        <div class="feature-mini">
-          <div class="feature-mini-icon">⏱️</div>
+        <div class="flex items-center gap-3 bg-white p-5 rounded shadow">
+          <div class="text-2xl">⏱️</div>
           <div>
-            <strong>Fast Turnaround</strong>
-            <span>1-2 week delivery</span>
+            <strong class="block">Fast Turnaround</strong>
+            <span class="text-sm text-gray-600">1-2 week delivery</span>
           </div>
         </div>
-        <div class="feature-mini">
-          <div class="feature-mini-icon">🌍</div>
+        <div class="flex items-center gap-3 bg-white p-5 rounded shadow">
+          <div class="text-2xl">🌍</div>
           <div>
-            <strong>Global Standards</strong>
-            <span>Export compliant</span>
+            <strong class="block">Global Standards</strong>
+            <span class="text-sm text-gray-600">Export compliant</span>
           </div>
         </div>
-        <div class="feature-mini">
-          <div class="feature-mini-icon">💬</div>
+        <div class="flex items-center gap-3 bg-white p-5 rounded shadow">
+          <div class="text-2xl">💬</div>
           <div>
-            <strong>Expert Support</strong>
-            <span>Every step of the way</span>
+            <strong class="block">Expert Support</strong>
+            <span class="text-sm text-gray-600">Every step of the way</span>
           </div>
         </div>
       </div>
@@ -173,72 +173,67 @@
   </section>
 
   <!-- CONTACT METHODS -->
-  <section class="contact-methods">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-tag">Multiple Ways to Reach Us</span>
-        <h2>Choose Your Preferred Contact Method</h2>
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <span class="text-sm font-semibold uppercase tracking-wide text-orange-500">Multiple Ways to Reach Us</span>
+        <h2 class="text-4xl font-bold font-poppins mt-2">Choose Your Preferred Contact Method</h2>
       </div>
 
-      <div class="methods-grid">
-        <div class="method-card">
-          <div class="method-icon-wrap orange-glow">
-            <span class="method-icon">📞</span>
-          </div>
-          <h3>Call Us Directly</h3>
-          <p class="method-detail">+91 79 1234 5678</p>
-          <p class="method-sub">Mon–Sat, 9 AM – 7 PM IST</p>
-          <a href="tel:+917912345678" class="method-link">Start a call →</a>
+      <div class="grid grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-lg shadow">
+          <div class="text-3xl mb-4">📞</div>
+          <h3 class="text-xl font-bold font-poppins mb-1">Call Us Directly</h3>
+          <p class="text-gray-700">+91 79 1234 5678</p>
+          <p class="text-sm text-gray-500 mb-4">Mon–Sat, 9 AM – 7 PM IST</p>
+          <a href="tel:+917912345678" class="text-blue-600 hover:text-blue-800 font-semibold no-underline">Start a call →</a>
         </div>
 
-        <div class="method-card featured">
-          <div class="featured-badge">Most Popular</div>
-          <div class="method-icon-wrap blue-glow">
-            <span class="method-icon">✉️</span>
-          </div>
-          <h3>Email Inquiry</h3>
-          <p class="method-detail">info@strongwoodpackaging.com</p>
-          <p class="method-sub">24-hour response guarantee</p>
-          <a href="mailto:info@strongwoodpackaging.com" class="method-link">Send email →</a>
+        <div class="bg-white p-8 rounded-lg shadow relative">
+          <div class="absolute -top-3 right-4 bg-blue-500 text-white text-xs px-2 py-1 rounded">Most Popular</div>
+          <div class="text-3xl mb-4">✉️</div>
+          <h3 class="text-xl font-bold font-poppins mb-1">Email Inquiry</h3>
+          <p class="text-gray-700">info@strongwoodpackaging.com</p>
+          <p class="text-sm text-gray-500 mb-4">24-hour response guarantee</p>
+          <a href="mailto:info@strongwoodpackaging.com" class="text-blue-600 hover:text-blue-800 font-semibold no-underline">Send email →</a>
         </div>
 
-        <div class="method-card">
-          <div class="method-icon-wrap green-glow">
-            <span class="method-icon">📍</span>
-          </div>
-          <h3>Visit Our Facility</h3>
-          <p class="method-detail">Ahmedabad, Gujarat</p>
-          <p class="method-sub">See our production firsthand</p>
-          <a href="#map" class="method-link">View on map →</a>
+        <div class="bg-white p-8 rounded-lg shadow">
+          <div class="text-3xl mb-4">📍</div>
+          <h3 class="text-xl font-bold font-poppins mb-1">Visit Our Facility</h3>
+          <p class="text-gray-700">Ahmedabad, Gujarat</p>
+          <p class="text-sm text-gray-500 mb-4">See our production firsthand</p>
+          <a href="#map" class="text-blue-600 hover:text-blue-800 font-semibold no-underline">View on map →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- MAP CALLOUT -->
-  <section class="map-callout" id="map">
-    <div class="container">
-      <div class="map-content">
-        <div class="map-info">
-          <span class="location-badge">📍 Our Location</span>
-          <h2>Visit STRONGWOOD Packaging</h2>
-          <p>See our state-of-the-art facility where precision meets craftsmanship. Schedule a tour to discuss your packaging needs in person.</p>
-          
-          <div class="address-block">
-            <h4>STRONGWOOD Packaging Industries</h4>
-            <p>Industrial Area, Ahmedabad<br>Gujarat, India</p>
+  <section id="map" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid grid-cols-2 gap-10 items-stretch">
+        <div class="bg-white p-8 rounded-lg shadow">
+          <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">📍 Our Location</span>
+          <h2 class="text-3xl font-bold font-poppins mb-2">Visit STRONGWOOD Packaging</h2>
+          <p class="text-gray-700 mb-6">See our state-of-the-art facility where precision meets craftsmanship. Schedule a tour to discuss your packaging needs in person.</p>
+
+          <div class="mb-6">
+            <h4 class="font-semibold">STRONGWOOD Packaging Industries</h4>
+            <p class="text-gray-700">Industrial Area, Ahmedabad<br>Gujarat, India</p>
           </div>
 
-          <div class="directions-cta">
-            <a href="#" class="btn-directions">Get Directions</a>
-            <a href="#" class="btn-schedule">Schedule Visit</a>
+          <div class="flex gap-4">
+            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded no-underline hover:bg-blue-700 transition font-semibold">Get Directions</a>
+            <a href="#" class="border border-blue-600 text-blue-600 px-6 py-3 rounded no-underline hover:bg-blue-50 transition font-semibold">Schedule Visit</a>
           </div>
         </div>
-        <div class="map-placeholder">
-          <div class="map-overlay">
-            <span class="map-pin">📍</span>
-            <p>Interactive Map</p>
-            <small>Ahmedabad, Gujarat</small>
+        <div class="relative bg-white rounded-lg shadow overflow-hidden flex items-center justify-center">
+          <div class="absolute inset-0 bg-[url('assets/images/6.jpg')] bg-cover bg-center opacity-10"></div>
+          <div class="relative text-center p-12">
+            <div class="text-5xl mb-2">📍</div>
+            <p class="font-semibold">Interactive Map</p>
+            <small class="text-gray-500">Ahmedabad, Gujarat</small>
           </div>
         </div>
       </div>
@@ -246,174 +241,161 @@
   </section>
 
   <!-- PROCESS TIMELINE -->
-  <section class="process-timeline">
-    <div class="container">
-      <div class="section-header-center">
-        <span class="section-tag">How It Works</span>
-        <h2>From Inquiry to Delivery in 3 Simple Steps</h2>
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <span class="text-sm font-semibold uppercase tracking-wide text-orange-500">How It Works</span>
+        <h2 class="text-4xl font-bold font-poppins mt-2">From Inquiry to Delivery in 3 Simple Steps</h2>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker">1</div>
-          <div class="timeline-card">
-            <h3>Share Your Requirements</h3>
-            <p>Tell us about your cargo: dimensions, weight, destination, and timeline. Upload photos or specs if available.</p>
-            <ul class="timeline-features">
-              <li>✓ Detailed consultation</li>
-              <li>✓ Load analysis</li>
-              <li>✓ Route assessment</li>
-            </ul>
-          </div>
+      <div class="grid grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-lg shadow">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold mb-4">1</div>
+          <h3 class="text-xl font-bold font-poppins mb-2">Share Your Requirements</h3>
+          <p class="text-gray-700 mb-4">Tell us about your cargo: dimensions, weight, destination, and timeline. Upload photos or specs if available.</p>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✓ Detailed consultation</li>
+            <li>✓ Load analysis</li>
+            <li>✓ Route assessment</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">2</div>
-          <div class="timeline-card">
-            <h3>Receive Custom Quote</h3>
-            <p>Get a detailed proposal with specs, materials, compliance notes, and pricing—all within 24 hours.</p>
-            <ul class="timeline-features">
-              <li>✓ Transparent pricing</li>
-              <li>✓ Material specifications</li>
-              <li>✓ Delivery timeline</li>
-            </ul>
-          </div>
+        <div class="bg-white p-8 rounded-lg shadow">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold mb-4">2</div>
+          <h3 class="text-xl font-bold font-poppins mb-2">Receive Custom Quote</h3>
+          <p class="text-gray-700 mb-4">Get a detailed proposal with specs, materials, compliance notes, and pricing—all within 24 hours.</p>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✓ Transparent pricing</li>
+            <li>✓ Material specifications</li>
+            <li>✓ Delivery timeline</li>
+          </ul>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">3</div>
-          <div class="timeline-card">
-            <h3>We Build & Deliver</h3>
-            <p>Expert craftsmanship with quality checks at every stage. On-time dispatch with all export documentation.</p>
-            <ul class="timeline-features">
-              <li>✓ Quality assurance</li>
-              <li>✓ ISPM-15 treatment</li>
-              <li>✓ On-time delivery</li>
-            </ul>
-          </div>
+        <div class="bg-white p-8 rounded-lg shadow">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold mb-4">3</div>
+          <h3 class="text-xl font-bold font-poppins mb-2">We Build & Deliver</h3>
+          <p class="text-gray-700 mb-4">Expert craftsmanship with quality checks at every stage. On-time dispatch with all export documentation.</p>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>✓ Quality assurance</li>
+            <li>✓ ISPM-15 treatment</li>
+            <li>✓ On-time delivery</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TRUST SECTION -->
-  <section class="trust-section">
-    <div class="container">
-      <div class="trust-grid">
-        <div class="trust-content">
-          <h2>Trusted by Leading Businesses</h2>
-          <p>From local manufacturers to global exporters, businesses trust STRONGWOOD for packaging that protects their reputation.</p>
-          
-          <div class="trust-stats-row">
-            <div class="trust-stat">
-              <strong>5,000+</strong>
-              <span>Annual Shipments</span>
-            </div>
-            <div class="trust-stat">
-              <strong>12</strong>
-              <span>Industries Served</span>
-            </div>
-            <div class="trust-stat">
-              <strong>18</strong>
-              <span>Years Experience</span>
-            </div>
+  <section class="py-20 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-bold font-poppins mb-3">Trusted by Leading Businesses</h2>
+        <p class="text-gray-700 mb-6">From local manufacturers to global exporters, businesses trust STRONGWOOD for packaging that protects their reputation.</p>
+        
+        <div class="grid grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded shadow text-center">
+            <strong class="block text-2xl text-orange-500 font-poppins">5,000+</strong>
+            <span class="text-sm text-gray-600">Annual Shipments</span>
+          </div>
+          <div class="bg-white p-6 rounded shadow text-center">
+            <strong class="block text-2xl text-orange-500 font-poppins">12</strong>
+            <span class="text-sm text-gray-600">Industries Served</span>
+          </div>
+          <div class="bg-white p-6 rounded shadow text-center">
+            <strong class="block text-2xl text-orange-500 font-poppins">18</strong>
+            <span class="text-sm text-gray-600">Years Experience</span>
           </div>
         </div>
+      </div>
 
-        <div class="testimonial-highlight">
-          <div class="quote-mark">"</div>
-          <p class="testimonial-text">STRONGWOOD's packaging engineering saved us thousands in damage claims. Their attention to detail and export compliance made our international expansion seamless.</p>
-          <div class="testimonial-author">
-            <strong>Rajesh Kumar</strong>
-            <span>Supply Chain Director, TechExport India</span>
-          </div>
+      <div class="bg-white p-8 rounded-lg shadow relative">
+        <div class="absolute -top-3 left-8 text-4xl text-gray-300">“</div>
+        <p class="text-gray-800 text-lg leading-relaxed mb-4">STRONGWOOD's packaging engineering saved us thousands in damage claims. Their attention to detail and export compliance made our international expansion seamless.</p>
+        <div>
+          <strong>Rajesh Kumar</strong>
+          <span class="block text-sm text-gray-600">Supply Chain Director, TechExport India</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>Strong packaging starts with STRONGWOOD</h2>
-      <a href="index.html" class="btn btn-primary">Explore Our Solutions</a>
+  <section class="py-20 bg-gray-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-4xl font-bold mb-8 font-poppins">Strong packaging starts with STRONGWOOD</h2>
+      <a href="index.html" class="bg-orange-500 text-white px-9 py-4 rounded no-underline hover:bg-orange-600 transition inline-block font-semibold text-lg">Explore Our Solutions</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-4 gap-8 mb-12">
       <!-- Logo Section -->
-      <div class="footer-section">
-        <div class="footer-logo">
-          <img src="assets/images/logo1.png" alt="STRONGWOOD Logo">
+      <div>
+        <div class="mb-4">
+          <img src="assets/images/logo1.png" alt="STRONGWOOD Logo" class="h-12">
         </div>
-        <h3>STRONGWOOD</h3>
-        <p>Built for Strength. Delivered with Care.</p>
+        <h3 class="text-white font-bold text-lg font-poppins mb-2">STRONGWOOD</h3>
+        <p class="text-sm">Built for Strength. Delivered with Care.</p>
       </div>
 
       <!-- Quick Links -->
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="products.html">Our Products</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+      <div>
+        <h3 class="text-white font-bold text-lg font-poppins mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-orange-500 transition no-underline">About Us</a></li>
+          <li><a href="products.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Our Products</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Contact Us</a></li>
         </ul>
       </div>
 
       <!-- Products -->
-      <div class="footer-section">
-        <h3>Our Products</h3>
-        <ul class="footer-links">
-          <li><a href="products.html">Custom Wooden Boxes</a></li>
-          <li><a href="products.html">Heavy Duty Packaging</a></li>
-          <li><a href="products.html">Wooden Pallets</a></li>
-          <li><a href="products.html">Export Packaging</a></li>
+      <div>
+        <h3 class="text-white font-bold text-lg font-poppins mb-4">Our Products</h3>
+        <ul class="space-y-2">
+          <li><a href="products.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Custom Wooden Boxes</a></li>
+          <li><a href="products.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Heavy Duty Packaging</a></li>
+          <li><a href="products.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Wooden Pallets</a></li>
+          <li><a href="products.html" class="text-gray-400 hover:text-orange-500 transition no-underline">Export Packaging</a></li>
         </ul>
       </div>
 
       <!-- Contact Info -->
-      <div class="footer-section">
-        <h3>Contact Info</h3>
-        <div class="footer-contact-info">
-          <p>
-            <span class="contact-icon">📍</span>
-            <span class="contact-detail">
-              <strong>Location</strong>
-              Ahmedabad, Gujarat, India
-            </span>
+      <div>
+        <h3 class="text-white font-bold text-lg font-poppins mb-4">Contact Info</h3>
+        <div class="space-y-3">
+          <p class="text-sm">
+            <span class="block text-gray-400">📍 Location</span>
+            <span class="text-gray-300">Ahmedabad, Gujarat, India</span>
           </p>
-          <p>
-            <span class="contact-icon">✉️</span>
-            <span class="contact-detail">
-              <strong>Email</strong>
-              info@strongwoodpackaging.com
-            </span>
+          <p class="text-sm">
+            <span class="block text-gray-400">✉️ Email</span>
+            <span class="text-gray-300">info@strongwoodpackaging.com</span>
           </p>
-          <p>
-            <span class="contact-icon">📞</span>
-            <span class="contact-detail">
-              <strong>Phone</strong>
-              +91 79 1234 5678
-            </span>
+          <p class="text-sm">
+            <span class="block text-gray-400">📞 Phone</span>
+            <span class="text-gray-300">+91 79 1234 5678</span>
           </p>
         </div>
       </div>
     </div>
 
     <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p><strong>© 2026 STRONGWOOD Packaging Industries</strong></p>
-      <p>All rights reserved | Built for Strength. Delivered with Care.</p>
-      
-      <!-- Social Links -->
-      <div class="footer-social">
-        <a href="https://facebook.com/strongwood" title="Facebook" aria-label="Facebook">f</a>
-        <a href="https://linkedin.com/company/strongwood" title="LinkedIn" aria-label="LinkedIn">in</a>
-        <a href="https://instagram.com/strongwood" title="Instagram" aria-label="Instagram">📷</a>
-        <a href="https://twitter.com/strongwood" title="Twitter" aria-label="Twitter">𝕏</a>
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="font-semibold text-gray-300">© 2026 STRONGWOOD Packaging Industries</p>
+          <p class="text-sm text-gray-400">All rights reserved | Built for Strength. Delivered with Care.</p>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="flex gap-4">
+          <a href="https://facebook.com/strongwood" title="Facebook" class="text-gray-400 hover:text-orange-500 transition no-underline text-lg">f</a>
+          <a href="https://linkedin.com/company/strongwood" title="LinkedIn" class="text-gray-400 hover:text-orange-500 transition no-underline text-lg">in</a>
+          <a href="https://instagram.com/strongwood" title="Instagram" class="text-gray-400 hover:text-orange-500 transition no-underline text-lg">📷</a>
+          <a href="https://twitter.com/strongwood" title="Twitter" class="text-gray-400 hover:text-orange-500 transition no-underline text-lg">𝕏</a>
+        </div>
       </div>
     </div>
   </footer>
