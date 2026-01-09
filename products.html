@@ -26,7 +26,21 @@
         <a href="products.html" class="text-white text-sm lg:text-base no-underline">Products</a>
         <a href="contact.html" class="bg-orange-500 text-white px-4 sm:px-7 py-2 sm:py-3 rounded no-underline hover:bg-orange-600 transition text-sm lg:text-base">Get a Quote</a>
       </nav>
-      <a href="contact.html" class="md:hidden bg-orange-500 text-white px-4 py-2 rounded text-sm no-underline hover:bg-orange-600">Menu</a>
+      <button id="mobileMenuBtn" class="md:hidden bg-orange-500 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-orange-600 transition">☰ Menu</button>
+      <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-5 py-4 space-y-3">
+          <a href="index.html" class="block text-white text-sm py-2 no-underline hover:text-orange-500 transition">Home</a>
+          <a href="about.html" class="block text-white text-sm py-2 no-underline hover:text-orange-500 transition">About</a>
+          <a href="products.html" class="block text-white text-sm py-2 no-underline hover:text-orange-500 transition">Products</a>
+          <a href="contact.html" class="block bg-orange-500 text-white px-4 py-2 rounded text-sm no-underline hover:bg-orange-600 transition text-center font-semibold">Get a Quote</a>
+        </div>
+      </nav>
+
+      <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+          document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+      </script>
     </div>
   </header>
 
